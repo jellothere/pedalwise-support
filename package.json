@@ -1,0 +1,13 @@
+{
+  "name": "pedalwise-support",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && python3 -m http.server 8789 --bind 127.0.0.1 --directory dist"
+  }
+}
