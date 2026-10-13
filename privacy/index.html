@@ -18,14 +18,23 @@
 <main id="main" class="document">
   <span class="eyebrow">Your rides stay yours</span>
   <h1>Privacy policy</h1>
-  <p class="date">Effective 12 October 2026 · App version 1.0</p>
+  <p class="date">Effective 13 October 2026 · App version 1.0</p>
   <p>Pedalwise is developed by Julian Sainz Martinez (Jelluna). The app has no account, no advertising, no analytics SDK and no tracking. There is no developer-operated server: your bikes, maintenance history and places are stored on your iPhone.</p>
 
   <h2 id="device">Stored on your device</h2>
-  <p>Pedalwise stores what you enter so the app can work: your bikes and their specifications (for example motor, torque, battery, weights, tires, brakes), your riding preferences, maintenance tasks and service history, rides you log or finish, saved places such as Home and Work, recent destinations, and settings. This information never leaves your iPhone except as part of your own device backups, under your Apple settings.</p>
+  <p>Pedalwise stores what you enter so the app can work: your bikes and their specifications (for example motor, torque, battery, weights, tires, brakes), your riding preferences, maintenance tasks and service history, rides you log or finish, saved places such as Home and Work, recent destinations, your commute days and times, starred routes, the spots where you confirmed you waited at a traffic light (so future estimates include them), commute streaks and points, and settings. To save requests, the app also keeps recently planned routes for up to seven days and the latest weather forecasts for Home and Work in its cache. This information never leaves your iPhone except as part of your own device backups, under your Apple settings.</p>
 
   <h2 id="routing">Route planning</h2>
   <p>To calculate routes, Pedalwise sends the start and destination coordinates of the trip, a few routing preferences (such as bike type, typical speed and how much you prefer bike lanes or avoid hills) and the resulting route shape to our routing provider, <a href="https://stadiamaps.com/privacy-policy/">Stadia Maps</a>, which hosts the open-source Valhalla routing engine on OpenStreetMap data. Requests do not include your name, Apple Account, bike name, maintenance data or a persistent identifier. Stadia Maps processes requests to return the route and may keep technical logs, such as IP addresses, under its privacy policy to operate and protect its service.</p>
+
+  <h2 id="weather">Weather</h2>
+  <p>If you set Home or Work, Pedalwise asks Apple Weather for hourly forecasts at those two places so it can warn you about rain on your commute and suggest when to leave. Only the coordinates are sent, through Apple's WeatherKit, without your name, Apple Account or any identifier from the app. Apple processes these requests under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. Forecasts are refreshed in the background before your usual departure and kept on your iPhone.</p>
+
+  <h2 id="health">Apple Health</h2>
+  <p>If you turn on Apple Health in Settings and give permission, Pedalwise saves each finished ride to Health as a cycling workout with its distance, duration, route and the calories you burned (on an e-bike, the motor's share is left out). Pedalwise only writes these workouts; it does not read any Health data. Health data is never sent to the developer or any third party, and is not used for advertising or any purpose other than recording your rides. You can change or revoke access at any time in iPhone Settings or the Health app.</p>
+
+  <h2 id="watch">Apple Watch</h2>
+  <p>The Apple Watch app shows your next turn, speed, arrival time, battery and upcoming maintenance. This information travels directly between your iPhone and your paired Apple Watch and is not sent to any server.</p>
 
   <h2 id="location">Location</h2>
   <p>With your permission, the app uses your iPhone's location while it is open to plan routes from where you are and to follow your progress during a ride. Your location history is not stored by Pedalwise and is not sent anywhere except the start point of a route you request, as described above. You can turn location access off in iPhone Settings and type a start point instead.</p>
@@ -37,10 +46,10 @@
   <p>Subscriptions and free trials are handled by Apple. The app uses StoreKit to check whether Pedalwise Pro is active, its renewal date and whether you are eligible for a trial. Payment details are never shared with the developer.</p>
 
   <h2 id="notifications">Reminders</h2>
-  <p>Maintenance reminders are local notifications scheduled on your iPhone. They are not sent through a server.</p>
+  <p>Maintenance, charging, rain and free-trial reminders are local notifications scheduled on your iPhone. They are not sent through a server.</p>
 
   <h2 id="control">Your control</h2>
-  <p>You can edit or delete any bike, task or place in the app. My Bike → Settings → Erase all data removes everything Pedalwise stored on your device and its scheduled reminders. It does not affect your Apple subscription, files you exported (such as GPX routes) or your device backups.</p>
+  <p>You can edit or delete any bike, task or place in the app. My Bike → Settings → Erase all data removes everything Pedalwise stored on your device, including cached routes and forecasts, and its scheduled reminders. Workouts already saved to Apple Health stay there until you delete them in the Health app. It does not affect your Apple subscription, files you exported (such as GPX routes) or your device backups.</p>
 
   <h2 id="website">This website and support</h2>
   <p>This website is hosted on Cloudflare and has no analytics, advertising scripts, forms or tracking cookies. Cloudflare processes technical request data, such as IP addresses, to deliver and protect the site under <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's privacy policy</a>.</p>
