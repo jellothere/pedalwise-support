@@ -4,7 +4,12 @@ import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const output = join(root, 'dist');
-const publicFiles = ['index.html', '404.html', 'privacy/index.html', 'terms/index.html', 'style.css', 'assets/icon.png', 'assets/hero.png'];
+const screens = ['routes', 'navigation', 'time', 'weather', 'commute', 'points', 'history', 'maintenance', 'my-bike'];
+const publicFiles = [
+  'index.html', '404.html', 'privacy/index.html', 'terms/index.html', 'style.css', 'assets/icon.png', 'assets/hero.jpg',
+  ...screens.map(name => `assets/screens/${name}.jpg`),
+  ...['ride', 'controls', 'summary'].map(name => `assets/watch/${name}.png`),
+];
 
 // Publish only this explicit list, never the repository or build-tool directory.
 await rm(output, { recursive: true, force: true });
